@@ -1,33 +1,30 @@
-name: GitHub Pages
-
+name: Generate Jekyll Archives
+# description: Generate categories, tags and years archive files.
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - main  # or the branch you use for GitHub Pages
+    paths:
+      - "_posts/**"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.0' # Specify your Ruby version here
-        bundler-cache: true
+      - name: Generate Jekyll Archives
+        uses: kannansuresh/jekyll-blog-archive-workflow@master
+        with:
+          archive_url: "https://grush-cloud.github.io/archives/archivedata"
+          archive_folder_path: "_archives"
 
-    - name: Install dependencies
-      run: |
-        bundle install
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"s
+          git config user.email "<>"          
 
-    - name: Build site
-      run: bundle exec jekyll build
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - name: commit
+        run: |
+          git add --all
+          git commit -m "Created and updated archive files." || echo "No changes to commit."
+          git push origin master || echo "No changes to push."          
