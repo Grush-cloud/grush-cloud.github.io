@@ -89,21 +89,21 @@ paginate_path: /page:num/
 
 category_archive:
   type: jekyll-archives
-  path: /category/
+  path: /categories/
 tag_archive:
   type: jekyll-archives
-  path: /tag/
+  path: /tags/
 
 jekyll-archives:
   enabled:
-    - category
-    - tag
+    - categories
+    - tags
   layouts:
     category: archive-categories
     tag: archive-categories
   permalinks:
-    category: /category/:name/
-    tag: /tag/:name/
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 
