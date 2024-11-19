@@ -1,7 +1,7 @@
 ---
 
 
-permalink: /categories/
+permalink: /category/
 title: Categories
 ---
 <style>

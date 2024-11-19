@@ -102,8 +102,8 @@ jekyll-archives:
     category: archive-categories
     tag: archive-categories
   permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+    category: /category/:name/
+    tag: /tag/:name/
 
 
 
