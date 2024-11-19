@@ -1,19 +1,23 @@
 ---
 title: About
 permalink: /about/
+layout: splash
 ---
 
-[page.name]
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+**$ cat about_me.txt | less** <br>
+Welcome to my homelab and cybersecurity corner of the web! This blog is a blend of tech experiments, homelab adventures, cybersecurity research, and my journey through the ever-evolving world of IT. Everything here serves as both a personal reference and a resource for like-minded enthusiasts.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+**$ whoami** <br>
+I am George Ashinze a Cybersecurity Enthusiast | Homelabber | Tech Tinkerer | Linux Advocate | Eternal Learner | Gamer | 
+
+**$ cat my_journey.txt** 
+- Navigating the world of IT, earning skills in networking, Linux, virtualization, and InfoSec.  
+- Got an MSc in [Cyber Security and Pen Testing]
+- Passed [Security+] 
+- Currently diving into Python
+- and many more to come
 
 
-[jekyll-organization]: https://github.com/jekyll
-
+**$ echo** "Thanks for stopping by! Let’s learn, break, and build together."

@@ -47,16 +47,13 @@ plugins:
   
 author:
   name     : "George Ashinze"
-  avatar   : "/assets/images/bio-photo.jpg"
-  bio      : "Random stuff"
-  location : "Somewhere"
+  avatar   : "/assets/grush-pfp.jpg"
+  bio      : "$ whoami"
+  location : "touching grass somewhere"
   links:
     - label: "Grushtech.com"
       icon: "fas fa-fw fa-link"
       url: "https://grushtech.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/george_ashinz"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/george-ashinze-856a51206"
@@ -69,9 +66,6 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/george_ashinz"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/george-ashinze-856a51206"
