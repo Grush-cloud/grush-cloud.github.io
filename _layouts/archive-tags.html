@@ -1,22 +1,82 @@
 ---
-layout: single
+layout: default
 title: Archive
 ---
+<style>
+/* Center content */
+.recent-posts {
+    max-width: 800px; /* Adjust this to your preferred width */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds padding around the content */
+}
 
-<!-- Begin List Posts
-================================================== -->
+/* Center the section title */
+.section-title h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Style the list items */
+.posts {
+    list-style: none;
+    padding: 0;
+}
+
+.posts li {
+    margin-bottom: 15px;
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #EAEAEA;
+}
+
+.post-link {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #699ea0;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .recent-posts {
+        max-width: 100%; /* Takes full width on smaller screens */
+        padding: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 1.5em; /* Smaller title on smaller screens */
+    }
+
+    .post-link {
+        font-size: 1em; /* Slightly smaller font for posts */
+    }
+}
+
+</style>
 <section class="recent-posts">
 <div class="section-title mt-2">
-    <h2>{{ page.title }}</h2>
+    <h2>{{ page.title }}</span></h2>
 </div>
-<div class="row listrecent">
-
-{% for post in site.posts %}
-{% if post.tags contains page.tag or post.tag == page.tag %}
-    {% include postbox.html %}
-{% endif %}    
-
-{% endfor %}
-
-</div>
+    <ul class="posts">
+        {% for post in site.posts %}
+            {% if post.tags contains page.tag or post.tag == page.tag %}
+                <li>
+                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 </section>
+
+
+
+   
+    

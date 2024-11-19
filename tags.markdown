@@ -42,7 +42,7 @@ permalink: /tag/
 <div class="grid-container">
 
 {% for tag in site.tags %}
-<a href = "{{tag[0]}}">
+<a href = "{{tag[0] | downcase }}">
 <div class="grid-item">
 {{tag[0]}}
 <span>({{ tag[1].size }}) </span>
