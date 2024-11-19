@@ -43,7 +43,7 @@ title: Categories
 <div class="grid-container">
 
 {% for category in site.categories %}
-<a href = "{{category[0]}}">
+<a href = "{{category[0] | downcase }}">
 <div class="grid-item">
 {{category[0]}}
 <span>({{ category[1].size }}) </span>
