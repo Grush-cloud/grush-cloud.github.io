@@ -46,7 +46,7 @@ plugins:
 author:
   name     : "George Ashinze"
   avatar   : "/assets/grush-pfp.jpg"
-  bio      : "$ whoami"
+  bio      : "Bio is supposed to go here..."
   location : "touching grass somewhere"
   links:
     - label: "Grushtech.com"
