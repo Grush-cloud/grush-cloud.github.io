@@ -19,5 +19,6 @@ I am George Ashinze a Cybersecurity Enthusiast | Homelabber | Tech Tinkerer | Li
 - Currently diving into Python
 - and many more to come
 
+**$ wget my_cv --output-document='[source code of my career here](/assets/your_next_hire.pdf)'**
 
 **$ echo** "Thanks for stopping by! Let’s learn, break, and build together."
